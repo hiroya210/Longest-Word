@@ -46,7 +46,28 @@ li.active{
     background-color: black;
 }
 
+#form-container{
+    display: none;
+}
+
+#form{
+    display: flex;
+}
+
+button{
+    background: rgba(172, 255, 47, 0.454);
+    border: 1px solid black;
+    color: rgba(13, 86, 13, 0.536);
+    font-size: 36px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+button:hover, button:focus{
+    color: rgb(13, 86, 13);
+}
+
 .letter-input{
     text-align: center;
-    display: none;
+    padding: 8px;
 }

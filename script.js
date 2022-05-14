@@ -1,6 +1,7 @@
 const letters = document.querySelector(".letters");
 const input = document.querySelector(".letter-input")
 const form = document.getElementById("form")
+const formContainer = document.getElementById("form-container")
 const result = document.getElementById("result")
 const shuffleBtn = document.getElementById("reshuffle-btn")
 const letterList = [];
@@ -12,7 +13,7 @@ let level = 8
 const range = (start, stop, step) => Array.from({ length: (stop - start) / step + 1}, (_, i) => start + (i * step));
 
 const start = () => {
-    input.style.display = "block"
+    formContainer.style.display = "block"
     lettersArray = range("A".charCodeAt(0), "Z".charCodeAt(0), 1).map(x => String.fromCharCode(x));
     letters.innerHTML = ""
     temp = [...lettersArray]
