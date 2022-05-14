@@ -1,0 +1,52 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container{
+    margin: 10% auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+ul{
+    list-style: none;
+    display: flex;
+    font-size: 2em;
+    justify-content: center;
+}
+
+ul > li {
+    padding: 10px;
+    color: rgb(24, 86, 255);
+    border: 2px solid rgb(24, 86, 255);
+    width: 30px;
+    text-align: center;
+    margin: 0 10px;
+}
+
+li.active{
+    color: white;
+    background-color: rgb(24, 86, 255);
+}
+
+#reshuffle-btn{
+    text-decoration: none;
+    color: white;
+    border: 1px solid black;
+    background-color: rgba(0, 0, 0, 0.548);
+    padding: 10px;
+    transition: 0.2s;
+}
+
+#reshuffle-btn:hover{
+    background-color: black;
+}
+
+.letter-input{
+    text-align: center;
+    display: none;
+}
